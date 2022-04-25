@@ -13,8 +13,18 @@ Use to retrieve 1 fortune
 Example JSON Response:
 ```json
 {
-  "fortune":"The human spirit is stronger than anything that can happen to it.",
-  "luckyNumbers":[12,74,81,42,51,31]
+	"success": true,
+	"cookie": {
+		"fortune": "Your life does not get better by chance, it gets better by change.",
+		"luckyNumbers": [
+			26,
+			24,
+			34,
+			68,
+			74,
+			90
+		]
+	}
 }
 ```
 
@@ -28,39 +38,42 @@ Example Query: `https://digital-fortune-cookies-api.herokuapp.com/fortune?amount
 
 Example JSON Response:
 ```json
-[
-	{
-		"fortune": "A bird in the hand is worth three in the bush!!",
-		"luckyNumbers": [
-			23,
-			90,
-			24,
-			51,
-			5,
-			22
-		]
-	},
-	{
-		"fortune": "Happiness is an activity.",
-		"luckyNumbers": [
-			57,
-			51,
-			40,
-			73,
-			35,
-			10
-		]
-	},
-	{
-		"fortune": "People who are late are often happier than those who have to wait for them",
-		"luckyNumbers": [
-			91,
-			82,
-			100,
-			97,
-			54,
-			47
-		]
-	}
-]
+{
+	"succcess": true,
+	"cookies": [
+		{
+			"fortune": "Begin your life anew with strength, grace and wonder.",
+			"luckyNumbers": [
+				53,
+				71,
+				59,
+				18,
+				2,
+				67
+			]
+		},
+		{
+			"fortune": "Save the whales. Collect the whole set.",
+			"luckyNumbers": [
+				5,
+				100,
+				29,
+				81,
+				66,
+				14
+			]
+		},
+		{
+			"fortune": "Your succeess will astonish everyone.",
+			"luckyNumbers": [
+				12,
+				77,
+				4,
+				44,
+				17,
+				69
+			]
+		}
+	]
+}
 ```
