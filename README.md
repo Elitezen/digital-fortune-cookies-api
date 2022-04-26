@@ -39,7 +39,7 @@ Example Query: `https://digital-fortune-cookies-api.herokuapp.com/fortune?amount
 Example JSON Response:
 ```json
 {
-	"succcess": true,
+	"success": true,
 	"cookies": [
 		{
 			"fortune": "Begin your life anew with strength, grace and wonder.",

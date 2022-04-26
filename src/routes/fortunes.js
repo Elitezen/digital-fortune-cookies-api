@@ -26,8 +26,8 @@ function fortunes(req, res) {
   res
     .status(200)
     .send({
-      succcess: true,
-      cookies
+      success: true,
+      cookies: amount == 1 ? [cookies] : cookies
     });
 }
 
