@@ -1,6 +1,8 @@
 # Digital Fortune Cookies API
 API that serves a fortune along with 6 lucky numbers
 
+Live Demo: https://replit.com/@Elitezenv/fortune-cookie-generator-DEMO?v=1
+
 ## Routes
 
 ### GET Home
