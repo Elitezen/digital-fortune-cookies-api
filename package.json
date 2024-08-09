@@ -4,7 +4,8 @@
   "description": "API that serves a fortune along with 6 lucky numbers",
   "main": "index.js",
   "scripts": {
-    "start": "node ./"
+    "start": "node ./",
+    "build": ""
   },
   "repository": {
     "type": "git",

@@ -3,3 +3,4 @@ test.rest
 
 /bin
 /node_modules
+.vercel
