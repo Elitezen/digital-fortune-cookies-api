@@ -4,13 +4,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const { fortune } = require('./src/routes/fortune');
-const { fortunes } = require('./src/routes/fortunes');
 const { home } = require('./src/routes/home');
+const { default: helmet } = require('helmet');
 
+app.disable('x-powered-by');
 app.use(cors());
-app.use(express.json());
+app.use(helmet());
+app.use(express.json({ limit: '1mb' }));
 app.listen(PORT, () => console.log(`Running on port ${PORT}`));
 
 app.get('/', home); 
-app.get('/fortune', fortune);
-app.post('/fortunes/:amount?', fortunes); 
+app.get('/fortune/:amount?', fortune);

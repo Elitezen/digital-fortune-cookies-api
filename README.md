@@ -1,16 +1,14 @@
 # Digital Fortune Cookies API
 API that serves a fortune along with 6 lucky numbers
 
-Live Demo: https://replit.com/@Elitezenv/fortune-cookie-generator-DEMO?v=1
-
 ## Routes
 
 ### GET Home
-`https://digital-fortune-cookies-api.herokuapp.com/`
+`https://fortunecookies-i3p5.onrender.com/`
 
 ### GET Fortune
 Use to retrieve 1 fortune
-`https://digital-fortune-cookies-api.herokuapp.com/fortune`
+`https://fortunecookies-i3p5.onrender.com/fortune/`
 
 Example JSON Response:
 ```json
@@ -30,13 +28,12 @@ Example JSON Response:
 }
 ```
 
-### POST fortunes
-Use to retrieve multiple fortunes (Up to 10)
+Use to retrieve multiple fortunes (Up to 100 per call)
 
 Parameters:
-`amount` - Amount of fortunes to request (1 - 10 range)
+`amount` - Amount of fortunes to request (1 - 100 range)
 
-Example Query: `https://digital-fortune-cookies-api.herokuapp.com/fortune?amount=3`
+Example Query: `https://fortunecookies-i3p5.onrender.com/fortune?amount=3`
 
 Example JSON Response:
 ```json

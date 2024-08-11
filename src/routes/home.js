@@ -3,7 +3,7 @@ function home(req, res) {
     .status(200)
     .send({
       success: true,
-      message: 'Use the /fortune (GET) or /fortunes (POST) route to request fortune cookies. Visit https://github.com/Elitezen/digital-fortune-cookies-api#routes for more information'
+      message: 'Use the /fortune (GET) route to request fortune cookies. Visit https://github.com/Elitezen/fortunecookies#routes for more information'
     });
 }
 
